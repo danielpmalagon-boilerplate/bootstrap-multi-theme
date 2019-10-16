@@ -1,0 +1,28 @@
+@import "../includes";
+
+.blinker {
+	animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: blink;
+}
+
+@-webkit-keyframes blink {
+	0%, 70%, 99% {
+		opacity: 1;
+	}
+
+	71%, 89% {
+		opacity: 0;
+	}
+}
+
+@keyframes blink {
+	0%, 70%, 99% {
+		opacity: 1;
+	}
+
+	71%, 89% {
+		opacity: 0;
+	}
+}

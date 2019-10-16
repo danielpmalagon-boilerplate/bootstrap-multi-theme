@@ -1,0 +1,52 @@
+// Workspace
+//
+// Path for resources like fonts and images
+
+$font-path:             '../fonts/';
+$img-path:              '../images/';
+$sprite-path:           '../images/icons-sprite-default.svg';
+
+//
+// Color system
+//
+
+$primary:    	  #007bff;
+$secundary:  	  #6610f2;
+$success:       #dc3545;
+$info:          #ffc107;
+$warning:       #28a745;
+$danger:        #17a2b8;
+$light:         #868e96;
+$dark:          #343a40;
+
+$theme-colors: (
+  "primary": 	  $primary,
+  "secundary": 	$secundary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+// Heading
+//
+// Style heading elements.
+
+$heading-colors: () !default;
+$heading-colors: map-merge((
+  "h1-color":    	theme-color("primary"),
+  "h2-color":    	theme-color("primary"),
+  "h3-color":    	theme-color("primary"),
+  "h4-color":  		theme-color("secundary"),
+  "h5-color":    	theme-color("secundary"),
+  "h6-color":    	theme-color("secundary")
+), $heading-colors);
+
+
+// Blinker
+//
+// Blinker sample component on components folder
+
+$blinker-color:			theme-color("primary") !default;

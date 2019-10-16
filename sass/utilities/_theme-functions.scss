@@ -1,0 +1,7 @@
+@function theme-color($key: "primary") {
+	@return map-get($theme-colors, $key);
+}
+
+@function heading-color($key: "h1-color") {
+	@return map-get($heading-colors, $key);
+}

@@ -1,0 +1,27 @@
+h1 {
+  color: #007bff;
+}
+
+h2 {
+  color: #007bff;
+}
+
+h3 {
+  color: #007bff;
+}
+
+h4 {
+  color: #6610f2;
+}
+
+h5 {
+  color: #6610f2;
+}
+
+h6 {
+  color: #6610f2;
+}
+
+.icon-sprite {
+  background-image: url("../images/icons-sprite-default.svg");
+}

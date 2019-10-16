@@ -1,0 +1,3 @@
+@function heading($key: "h1-font-size") {
+	@return map-get($headings, $key);
+}

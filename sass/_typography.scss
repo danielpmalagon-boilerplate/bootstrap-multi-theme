@@ -1,0 +1,50 @@
+/* Baseline theme file boilerplate */
+
+@import "includes";
+
+body {
+	font-size: 22px;
+	line-height: 32px;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+
+	@include media-breakpoint-down($mobile-breakpoint) {
+		font-size: 18px;
+		line-height: 26px;
+	}
+}
+
+$headings-list: (h1, h2, h3, h4, h5, h6);
+
+@each $heading in $headings-list {
+	#{$heading} {
+		font-size: heading(#{$heading}-font-size);
+		line-height: heading(#{$heading}-line-height);
+
+		@include media-breakpoint-down($mobile-breakpoint) {
+			font-size: heading(#{$heading}-mobile-font-size);
+			line-height: heading(#{$heading}-mobile-line-height);
+		}
+	}
+}
+
+b, strong {
+	font-weight: 600;
+}
+
+.em {
+	font-style: italic;
+}
+
+.lowercase {
+	text-transform: lowercase;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
